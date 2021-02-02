@@ -1,5 +1,6 @@
 <div class="home-page">
     <h1>🍣 🍱 <%=  current_user.display_name %>'s Homepage 🍱 🍣</h1>
     <p>Welcome! You have logged in successfully!</p>
+    <p>You currently have ¥<%= current_user.yen %>!</p>
     <%= button_to "Log Out", logins_path, method: :delete %>
 </div>

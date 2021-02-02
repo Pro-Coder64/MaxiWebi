@@ -1,5 +1,6 @@
 <div class="login-page">
     <h1>Max waz 'ere</h1>
+    <div class="form">
         <%= form_with url: logins_path, local: true do |f| %>
         <%= f.label :username %><br>
         <%= f.text_field :username %><br>
@@ -7,4 +8,5 @@
         <%= f.password_field :password %><br>
         <%= f.submit :Login %>
     <% end %>
+    </div>
 </div>
